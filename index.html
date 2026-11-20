@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa Cruz de la Sierra - Eva Ramos Gabriel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación Superior -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand">
+        <span class="flag-badge">
+          <span class="stripe-green"></span>
+          <span class="stripe-white"></span>
+          <span class="stripe-green"></span>
+        </span>
+        <h1>Santa Cruz</h1>
+      </div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio" class="nav-btn active">Inicio</a></li>
+          <li><a href="#historia" class="nav-btn">Reseña Histórica</a></li>
+          <li><a href="#tipicas" class="nav-btn">Reseña Típicas</a></li>
+          <li><a href="#curiosidades" class="nav-btn">Curiosidades</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <span class="tag-pill">Corazón de Sudamérica</span>
+        <h2>Bienvenidos a Santa Cruz de la Sierra</h2>
+        <p>Tierra de hospitalidad, historia, naturaleza exuberante y tradiciones vivas vestidas de verde bandera y blanco.</p>
+        <div class="hero-actions">
+          <a href="#historia" class="btn-primary">Explorar Historia</a>
+          <a href="#curiosidades" class="btn-outline">Ver Curiosidades</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 1: Reseña Histórica -->
+  <section id="historia" class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Nuestras Raíces</span>
+        <h2>Reseña Histórica de Santa Cruz</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="history-grid">
+        <div class="history-image-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdSN3JnXUkv_t9HUp9d-fXc8f6-oeZqgQXmJSQH23k7Q&s=10" alt="Catedral Metropolitana Basílica de San Lorenzo en Santa Cruz">
+          <div class="img-caption">Catedral Metropolitana Basílica de San Lorenzo - Plaza 24 de Septiembre</div>
+        </div>
+        <div class="history-text">
+          <h3>De la Chiquitania al Río Piraí</h3>
+          <p>
+            <strong>Santa Cruz de la Sierra</strong> fue fundada el <strong>26 de febrero de 1561</strong> por el capitán español <strong>Ñuflo de Chaves</strong> a orillas del arroyo Sutós, en la serranía de Chiquitos. El nombre honra a su ciudad natal en Extremadura, España.
+          </p>
+          <p>
+            Tras varios traslados debido a conflictos y condiciones geográficas, la ciudad se asentó definitivamente en los llanos del Grigotá, cerca del río Piraí. El <strong>24 de septiembre de 1810</strong> proclamó su grito libertario, consolidando su identidad pujante y autónoma.
+          </p>
+          <div class="timeline-interactive">
+            <div class="timeline-tabs">
+              <button class="tab-btn active" data-year="1561">1561</button>
+              <button class="tab-btn" data-year="1810">1810</button>
+              <button class="tab-btn" data-year="1864">1864</button>
+              <button class="tab-btn" data-year="hoy">Actualidad</button>
+            </div>
+            <div class="timeline-panel" id="timelinePanel">
+              <h4>1561 - Fundación Original</h4>
+              <p>Ñuflo de Chaves funda Santa Cruz de la Sierra en las faldas de la serranía de San José de Chiquitos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Reseña Típicas de Santa Cruz -->
+  <section id="tipicas" class="section bg-green-tint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Sabor y Tradición</span>
+        <h2>Reseña Típicas de Santa Cruz</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Descubre las expresiones culturales, gastronómicas y artísticas más emblemáticas del oriente boliviano. Haz clic en cada tarjeta para conocer más.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Tarjeta 1 -->
+        <article class="tipica-card" data-detail="El Majadito es uno de los platos bandera de Santa Cruz. Preparado con arroz graneado, charque (carne seca desmenuzada), urucú que le da su color rojizo característico, acompañado de huevo frito y plátano maduro frito.">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_RZREZTSvLj8QyGUUvVn_WCZjQgcOmMuBIn6AfzVy75IWip_VXSoBXSET430U-OUTTpnEeRhOB3R24ahxX7z5-wx76Dz-XI9r9PjTWq66_g&s=10" alt="Gastronomía Típica Cruceña - Majadito">
+            <span class="card-badge">Gastronomía</span>
+          </div>
+          <div class="card-body">
+            <h3>El Majadito y Horneaos</h3>
+            <p>El sabor tradicional del charque con arroz, acompañado del infaltable cuñapé, sonso y pan de arroz para el café de la siesta.</p>
+            <button class="btn-card-toggle">Ver reseña completa</button>
+            <div class="card-extra-info"></div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tipica-card" data-detail="El Taquirari es el ritmo musical y danza más representativa del oriente boliviano. Su nombre proviene de la palabra moxeña 'takirikire' (flecha). Se baila en pareja con movimientos alegres, saltos ligeros y pañuelos en mano.">
+          <div class="card-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdmobii830yhpmeiT4OW2Qyvvh7PDPuHiJiCdMb1aXg&s=10" alt="Danza Típica Taquirari y Carnavalito">
+            <span class="card-badge">Música y Danza</span>
+          </div>
+          <div class="card-body">
+            <h3>Taquirari y Chovena</h3>
+            <p>Ritmos alegres interpretados con tamborita, flauta y guitarra que celebran la alegría de la tierra camba y sus fiestas.</p>
+            <button class="btn-card-toggle">Ver reseña completa</button>
+            <div class="card-extra-info"></div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tipica-card" data-detail="La vestimenta típica del camba consta de camisa blanca holgada, pantalón blanco, sombrero de saó tejido a mano y pañoleta al cuello. La mujer luce el tradicional tipoy, un vestido largo sin mangas con volados coloridos y flores en el cabello.">
+          <div class="card-img-wrapper">
+            <img src="data:image/jpeg;base64,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" alt="Vestimenta Típica Tipoy y Sombrero de Saó">
+            <span class="card-badge">Vestimenta</span>
+          </div>
+          <div class="card-body">
+            <h3>El Tipoy y Sombrero de Saó</h3>
+            <p>Prendas frescas y elegantes que reflejan la identidad cultural cruceña en cada celebración cívica y folklórica.</p>
+            <button class="btn-card-toggle">Ver reseña completa</button>
+            <div class="card-extra-info"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Curiosidades Interactivas -->
+  <section id="curiosidades" class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Datos Fascinantes</span>
+        <h2>Curiosidades de Santa Cruz</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Presiona el botón interactivo para desplegar la lista de curiosidades y selecciona cada tema para ver su información y fotografía.</p>
+      </div>
+
+      <div class="curiosidades-control">
+        <button id="toggleCuriosidadesBtn" class="btn-interactive-main" aria-expanded="false">
+          <span class="btn-icon">🌿</span>
+          <span id="btnText">Mostrar Lista de Curiosidades</span>
+          <span class="arrow-icon" id="arrowIcon">▼</span>
+        </button>
+      </div>
+
+      <!-- Lista desplegable solicitada -->
+      <div id="curiosidadesDropdown" class="curiosidades-dropdown hidden">
+        <ul class="curiosidades-list" id="curiosidadesList">
+          <li>
+            <button class="curiosidad-item-btn active" data-topic="anillos">
+              <span class="item-number">01</span>
+              <span class="item-title">Ciudad de los anillos</span>
+              <span class="item-chevron">➔</span>
+            </button>
+          </li>
+          <li>
+            <button class="curiosidad-item-btn" data-topic="fundacion">
+              <span class="item-number">02</span>
+              <span class="item-title">Fundación</span>
+              <span class="item-chevron">➔</span>
+            </button>
+          </li>
+          <li>
+            <button class="curiosidad-item-btn" data-topic="bandera">
+              <span class="item-number">03</span>
+              <span class="item-title">Bandera</span>
+              <span class="item-chevron">➔</span>
+            </button>
+          </li>
+          <li>
+            <button class="curiosidad-item-btn" data-topic="crucena">
+              <span class="item-number">04</span>
+              <span class="item-title">Cruceña</span>
+              <span class="item-chevron">➔</span>
+            </button>
+          </li>
+          <li>
+            <button class="curiosidad-item-btn" data-topic="tajibo">
+              <span class="item-number">05</span>
+              <span class="item-title">El Tajibo</span>
+              <span class="item-chevron">➔</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Visor interactivo del elemento seleccionado (con foto) -->
+        <div class="curiosidad-display" id="curiosidadDisplay">
+          <div class="curiosidad-img-box">
+            <img id="curiosidadImg" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=80" alt="Ciudad de los anillos">
+          </div>
+          <div class="curiosidad-info-box">
+            <span class="curiosidad-badge" id="curiosidadBadge">Urbanismo</span>
+            <h3 id="curiosidadTitle">Ciudad de los anillos</h3>
+            <p id="curiosidadDesc">
+              Santa Cruz de la Sierra es mundialmente conocida como la "Ciudad de los Anillos" debido a su diseño urbanístico concéntrico inspirado en las ciudades jardín europeas (Plan Techint). Sus avenidas circulares (anillos) se cruzan con avenidas radiales que parten desde el centro histórico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página (SIN FOTOS) -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-divider"></div>
+      <p class="footer-title">Santa Cruz de la Sierra • Verde, Blanco y Verde</p>
+      <p class="footer-author">Desarrollado por: <strong>Eva Ramos Gabriel</strong></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
